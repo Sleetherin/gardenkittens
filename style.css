@@ -1,0 +1,161 @@
+html
+{
+    font-size:16px;
+    color:#293133;
+    font-family: 'Cormorant', serif;
+}
+
+body
+{
+    background-color: #A03589;
+    margin:0;
+}
+
+
+
+/*Navbar*/
+.navbar
+{
+    display:flex;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.navbar img
+{
+  margin-left:50px;
+  width:60px;
+}
+
+.menu
+{
+    margin: 20px 10px;
+}
+
+.menu a
+{
+   font-size:1.1em;
+   margin-right: 10px;
+   background-color: #F5CB00;
+   padding:5px;
+   border-radius: 5px;
+   font-weight: bold;
+   flex-wrap: wrap;
+}
+
+@media only screen and (max-width:600px)
+{
+    .navbar
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    
+    .menu 
+    {
+       display: grid;
+       width:100%;
+       height:auto;
+       bottom:0;
+    }
+
+    .menu a {
+        border-radius: 0;
+        text-align: center;
+        border:1px solid black;
+        height:30px;
+        width:100%;
+        margin-bottom:1rem;
+        left:0;
+    }
+}
+
+
+/*The banner*/ 
+.banner
+{
+    background-image:url("/images/bannerx.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:700px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 1px solid #F5CB00;
+}
+
+.banner_text
+{
+    background-color:#00F5EE;
+    padding:5px;
+    opacity: 0.6;
+}
+
+
+
+/*Photo collection 1*/
+.garden_cats
+{
+   padding-top: 50px;
+   text-align: center;
+   border-bottom: 1px solid #F5CB00;
+}
+
+.garden_kittens_photos
+{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+
+
+/*Photo collection 2*/
+.rainbow_cats
+{
+    background-color: #3B7574;
+    text-align: center;
+    padding-top: 20px;
+    border-bottom: 1px solid #F5CB00;
+}
+
+
+
+/*Info about Garden Kittens*/
+.about
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid #F5CB00;
+    padding-left: 20px;
+    font-size: 1.5rem;
+    height: 200px;
+    font-weight: 900;
+    background-color: #293133;
+    color:#00F5EE;
+}
+
+
+footer
+{
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 1000;
+    width:100%;
+    padding-left: 100px;
+}
+
+
+
