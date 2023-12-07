@@ -35,12 +35,19 @@ body
 .menu a
 {
    font-size:1.1em;
-   margin-right: 10px;
-   background-color: #F5CB00;
-   padding:5px;
+   margin-right: 15px;
+   background-color: black;
+   color:#00F5EE;
+   padding:8px;
    border-radius: 5px;
    font-weight: bold;
    flex-wrap: wrap;
+   text-decoration: none;
+   border: 3px solid #A03589;
+}
+
+.menu a:hover{
+   border:3px dashed #00F5EE;
 }
 
 @media only screen and (max-width:600px)
@@ -86,7 +93,7 @@ body
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    border-bottom: 1px solid #F5CB00;
+    border-bottom: 3px dashed #00F5EE;
 }
 
 .banner_text
@@ -99,11 +106,24 @@ body
 
 
 /*Photo collection 1*/
-.garden_cats
+
+figure figcaption
+{
+    color:white;
+    font-size:1.5em;
+}
+
+figure img
+{
+   border: 1px solid #00F5EE;
+}
+
+
+#garden_cats
 {
    padding-top: 50px;
    text-align: center;
-   border-bottom: 1px solid #F5CB00;
+   border-bottom: 1px solid #00F5EE;
 }
 
 .garden_kittens_photos
@@ -121,24 +141,24 @@ h2{
 
 
 /*Photo collection 2*/
-.rainbow_cats
+#rainbow_cats
 {
     background-color: #3B7574;
     text-align: center;
     padding-top: 20px;
-    border-bottom: 1px solid #F5CB00;
+    border-bottom: 1px solid #00F5EE;;
 }
 
 
 
 /*Info about Garden Kittens*/
-.about
+#about
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    border-bottom: 1px solid #F5CB00;
+    border-bottom: 1px solid #00F5EE;;
     padding-left: 20px;
     font-size: 1.5rem;
     height: 200px;
@@ -148,14 +168,16 @@ h2{
 }
 
 
-footer
+footer 
 {
     font-size: 1rem;
     text-align: left;
     font-weight: 1000;
     width:100%;
     padding-left: 100px;
+    font-weight: 900;
 }
+
 
 
 
